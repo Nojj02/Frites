@@ -73,8 +73,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventBindings.cs" />
+    <Compile Include="Injector.cs" />
+    <Compile Include="Mappings\ItemMapping.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Features\ParameterMappingSteps.cs" />
+    <Compile Include="MyKernel.cs" />
     <Compile Include="ParameterMapping.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -96,7 +100,6 @@
       <Name>Frites.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
